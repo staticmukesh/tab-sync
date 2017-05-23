@@ -1,0 +1,18 @@
+{
+    "name": "tab-sync",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "description": "A chrome extension for managing tabs across various devices",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/icon_16.png",
+            "48": "icons/icon_16.png",
+            "128": "icons/icon_128.png"
+        }
+    },
+    "permissions": ["activeTab"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
